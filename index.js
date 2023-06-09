@@ -95,8 +95,8 @@ res.json(jsonResponse);
 });
 
 
-
+const port = process.env.PORT || 4000
 // Start the server on port 4000
-app.listen(4000, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log('Server is listening on port 4000');
 });
